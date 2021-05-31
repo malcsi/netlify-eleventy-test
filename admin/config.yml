@@ -3,8 +3,11 @@ backend:
   branch: master 
 
   media_folder: "_site/images/uploads"
-  
-  media_library: "/images/"
+  public_folder: "/images/uploads"
+  media_library:
+  name: uploads
+  config:
+    publicKey: demopublickey
 
 collections:
   - name: "posts"
