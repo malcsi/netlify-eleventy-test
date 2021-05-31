@@ -5,7 +5,7 @@ backend:
   media_folder: "_site/images/uploads"
   public_folder: "/images/uploads"
   media_library:
-  - name: uploads
+  name: uploadcare
   config:
     publicKey: demopublickey
 
