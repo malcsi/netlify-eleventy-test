@@ -1,11 +1,11 @@
 backend:
-  name: git-gateway1
+  name: git-gateway
   branch: master 
 
   media_folder: "_site/images/uploads"
   public_folder: "/images/uploads"
   media_library:
-  name: uploads
+  - name: uploads
   config:
     publicKey: demopublickey
 
