@@ -4,14 +4,18 @@
     </head>
     <body>
       <header>
-          <a href="/">Home</a> | <a href="/posts/my-first-post">About this page</a>
+         <a href="/">Home</a> | <a href="/posts/my-first-post">About this page</a>
       </header>
 
       <h1>
          11ty Blog -A
-     </h1>
-
+      </h1>
+    <ul>
+    {% for article in news.articles %}
+    <li>{{ article.title }}</li>
+    {% endfor %}
+    </ul>
       {{ content|safe}}
-
+     <script src="design.js"></script>
     </body>
 </html>
