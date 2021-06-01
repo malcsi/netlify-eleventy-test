@@ -1,12 +1,21 @@
 <html>
     <head>
          <title>11ty Blog -A</title>
+         <style>
+         body {
+           width: 400px;
+           margin: 0 auto;
+         }
+         </style>
     </head>
     <body>
       <header>
          <a href="/">Home</a> | <a href="/posts/my-first-post">About this page</a>
       </header>
-
+      <h1>
+         11ty Blog -A
+      </h1>
+    
     <ul>
       {% for article in news.articles %}
       <li>
@@ -16,10 +25,7 @@
       {% endfor %}
     </ul>
 
-      <h1>
-         11ty Blog -A
-      </h1>
-    
+
       {{ content|safe}}
      <script src="design.js"></script>
     </body>
