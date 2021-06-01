@@ -7,14 +7,19 @@
          <a href="/">Home</a> | <a href="/posts/my-first-post">About this page</a>
       </header>
 
+    <ul>
+      {% for article in news.articles %}
+      <li>
+      <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
+      <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+      </li>
+      {% endfor %}
+    </ul>
+
       <h1>
          11ty Blog -A
       </h1>
-    <ul>
-    {% for article in news.articles %}
-    <li>{{ article.title }}</li>
-    {% endfor %}
-    </ul>
+    
       {{ content|safe}}
      <script src="design.js"></script>
     </body>
