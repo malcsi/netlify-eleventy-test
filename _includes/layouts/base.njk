@@ -6,10 +6,13 @@
            background-color: #e5cecc;
            width: 80%;
            margin: 0 auto;
-           font-size: 14px;
+           font-size: 18px;
+           text-align: center;
          }
-         article {
-           border: 2px solid ;
+         header {
+           border: 3px solid ;
+           font-size: 20px;
+           font-weight: bold;
          }
          </style>
     </head>
@@ -21,11 +24,10 @@
          <a href="/posts/my-second-post"></a>
       </header>
       <main>
-         <h1>
-            11ty Blog -A
-         </h1>
-    
-      {{ content|safe}}
+         <h1> 11ty Blog -A </h1>
+         
+     {{ content|safe }}
+     
         <article>
          <ul>
             {% for article in news.articles %}
