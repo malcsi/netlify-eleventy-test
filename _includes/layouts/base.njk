@@ -8,7 +8,7 @@
            margin: 0 auto;
            font-size: 14px;
          }
-         ul {
+         article {
            border:2 px solid;
            background-color: #ffffff;
            width: 100%;
@@ -28,7 +28,7 @@
          </h1>
     
       {{ content|safe}}
-
+        <article>
          <ul>
             {% for article in news.articles %}
             <li>
@@ -37,6 +37,7 @@
             </li>
             {% endfor %}
          </ul>
+         </article>
       </main>
       <footer>
           {{ content|safe}}
