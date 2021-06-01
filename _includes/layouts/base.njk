@@ -2,34 +2,42 @@
     <head>
          <title>11ty Blog -A</title>
          <style>
-         head, body {
+         body {
+           background-color: #e5cecc;
            width: 80%;
            margin: 0 auto;
            font-size: 14px;
+         }
+         header {
+           border: 2px solid;
          }
          </style>
     </head>
     <body>
       <header>
-         <a href="/">Home</a> | <a href="/posts/my-first-post">About this page</a>
+         <a href="/">Home</a>
+         <a href="/posts/aboutme">About me</a>
+         <a href="/posts/my-first-post">My drawings</a>
+         <a href="/posts/my-second-post"></a>
       </header>
-      <h1>
-         11ty Blog -A
-      </h1>
+      <main>
+         <h1>
+            11ty Blog -A
+         </h1>
     
-     {{ content|safe}}
+      {{ content|safe}}
 
-    <ul>
-      {% for article in news.articles %}
-      <li>
-      <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
-      <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
-      </li>
-      {% endfor %}
-    </ul>
-
-
-      
-     <script src="design.js"></script>
+         <ul>
+            {% for article in news.articles %}
+            <li>
+            <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
+            <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+            </li>
+            {% endfor %}
+         </ul>
+      </main>
+      <footer>
+          {{ content|safe}}
+      </footer>
     </body>
 </html>
