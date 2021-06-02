@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "install": "^0.13.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
