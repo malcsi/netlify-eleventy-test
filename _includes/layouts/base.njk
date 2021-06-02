@@ -3,24 +3,64 @@
          <title>11ty Blog -A</title>
          <style>
          body {
-           background-color: #e5cecc;
-           margin: 0 auto;
-           font-size: 18px;
-           width: 80%;
+            background-color: #e5cecc;
+            margin: 0 auto;
+            font-size: 18px;
+            width: 80%;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
          }
          header {
-           width: 60%;
-           border: 3px solid ;
-           font-size: 20px;
-           font-weight: bold;
-           text-align: center;
+            width: 60%;
+            border: 3px solid ;
+            font-size: 20px;
+            font-weight: bold;
+            margin: auto;
+            text-align: center;
          }
          article {
-           background-color: #eddede;
+            background-color: #eddede;
+            padding-left:20px;
+            padding-right: 20px;
+            width: 70%;
+            margin:auto;
          }
          h1 {
-           text-align: center;
+            text-align: center;
+
          }
+         .sidenav {
+            height: 100%;
+            width: 20%;
+            position: fixed;
+            z-index: 1;
+            top: -25;
+            left: 0;
+            background-color: rgb(141, 107, 107);
+            overflow-x: hidden;
+            text-align: center;
+            margin:0 auto;
+            }
+
+         .sidenav a {
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            font-size: 30px;
+            }
+
+         .sidenav a:hover {
+            color: #f1f1f1;
+            }
+
+         .sidenav.first {
+             text-decoration: underline;
+         }
+         @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
          </style>
     </head>
     <body>
@@ -29,15 +69,21 @@
          <a href="/posts/aboutme">About me</a>
          <a href="/posts/my-first-post">My drawings</a>
          <a href="/posts/my-second-post"></a>
+
+       <aside class="sidenav">
+            <a href="https://ana-h-blog.netlify.app/posts/"><h2><u>POSTS</u></h2></a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+       </aside>
+          
       </header>
       <main>
-         <h1> 11ty Blog -A </h1>
-         
-     {{ content|safe }}
-        <br/>
-        <a href="https://ana-h-blog.netlify.app/posts/">Posts</a>
+         <h1> Ana Maria Horhoianu <br/> 11ty Blog</h1>
+              {{ content|safe }}
+        
         <article>
-         
+       
             {% for article in news.articles %}
             
             <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
@@ -48,9 +94,5 @@
          </article>
          <br/>
       </main>
-      <footer>
-          {{ content|safe}}
-      </footer>
-      
     </body>
 </html>
