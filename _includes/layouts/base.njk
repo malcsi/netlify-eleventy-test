@@ -3,7 +3,7 @@
          <title>11ty Blog -A</title>
          <style>
          body {
-            background-color: #e5cecc;
+            background-color: #c5c6c7;
             margin: 0 auto;
             font-size: 18px;
             width: 80%;
@@ -51,7 +51,7 @@
             }
 
          .sidenav a:hover {
-            color: #f1f1f1;
+            color: #999;
             }
 
          .sidenav.first {
@@ -65,7 +65,7 @@
              width: 25%;
              overflow-x: hidden;
              margin-left: 80%;
-             top: -960px;
+             top: -1300px;
              right: -75px;
          }
             
@@ -89,9 +89,9 @@
       <main>
          <h1> Ana Maria Horhoianu <br/> 11ty Blog</h1>
               {{ content|safe }}
-        
+        <br/>
         <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
-        
+        <br/>
         <article>
        
             {% for article in news.articles %}
