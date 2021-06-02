@@ -29,21 +29,6 @@
             text-align: center;
 
          }
-         .sidenav {
-            height: 100%;
-            width: 20%;
-            position: fixed;
-            z-index: 1;
-            top: -25;
-            left: 0;
-            background-color: grey;
-            overflow-x: hidden;
-            text-align: center;
-            margin:0 auto;
-            }
-
-
-         }
             
          </style>
     </head>
@@ -53,30 +38,14 @@
          <a href="/posts/aboutme">About me</a>
          <a href="/posts/my-first-post">My drawings</a>
          <a href="/posts/my-second-post"></a>
-
-      
-            <a href="https://ana-h-blog.netlify.app/posts/"><h2><u>POSTS</u></h2></a>
-          
       </header>
+      
+         <a href="https://ana-h-blog.netlify.app/posts/"><h2><u>POSTS</u></h2></a>
+          
+      
       <main>
-         <h1> Ana Maria Horhoianu <br/> 11ty Blog</h1>
-              {{ content|safe }}
-        <br/>
-        <br/>
-        <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
-        <br/>
-        <article>
-       
-            {% for article in news.articles %}
-            
-            <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
-            <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
-            
-            {% endfor %}
 
-         </article>
-         <br/>
-    
+          
   
         <a class="weatherwidget-io" href="https://forecast7.com/en/53d65n1d79/huddersfield/" 
           data-label_1="HUDDERSFIELD" 
@@ -97,6 +66,27 @@
 
         (document,'script','weatherwidget-io-js');
         </script>
+
+
+         <h1> Ana Maria Horhoianu <br/> 11ty Blog</h1>
+              {{ content|safe }}
+              
+        <br/>
+        <br/>
+        <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+        <br/>
+
+        <article>
+       
+            {% for article in news.articles %}
+            
+            <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
+            <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+            
+            {% endfor %}
+
+         </article>
+         <br/>
 
       </main>
     </body>
