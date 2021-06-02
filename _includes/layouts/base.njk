@@ -60,6 +60,14 @@
          @media screen and (max-height: 450px) {
             .sidenav {padding-top: 15px;}
             .sidenav a {font-size: 18px;}
+            
+        .weatherwidget-io { 
+             width: 25%;
+             overflow-x: hidden;
+             margin-left: 80%;
+             top: -960px;
+             right: -75px;
+         }
             }
          </style>
     </head>
@@ -93,6 +101,27 @@
          
          </article>
          <br/>
+    // Weather widget starts here //
+        <a class="weatherwidget-io" href="https://forecast7.com/en/53d65n1d79/huddersfield/" 
+          data-label_1="HUDDERSFIELD" 
+          data-label_2="WEATHER" 
+          data-font="Palatino" 
+          data-icons="Climacons Animated" 
+          data-theme="mountains" 
+          data-textcolor="#000" 
+          data-lowcolor="#000" >HUDDERSFIELD WEATHER</a>
+
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+            if(!d.getElementById(id)){
+              js=d.createElement(s);
+              js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+         }}
+
+        (document,'script','weatherwidget-io-js');
+        </script>
+    //  Weather widget ends here //
       </main>
     </body>
 </html>
