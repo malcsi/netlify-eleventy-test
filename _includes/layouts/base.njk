@@ -1,61 +1,42 @@
 <html>
     <head>
-         <title>11ty Blog -A</title>
-         <style>
-         body {
-            background-color: #c5c6c7;
-            margin: 0 auto;
-            font-size: 18px;
-            width: 80%;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-         }
-         header {
-            width: 60%;
-            border: 3px solid ;
-            font-size: 20px;
-            font-weight: bold;
-            margin: auto;
-            text-align: center;
-         }
-         article {
-            background-color: #eddede;
-            padding-left:20px;
-            padding-right: 20px;
-            width: 70%;
-            margin:auto;
-         }
-         h1 {
-            text-align: center;
-
-         }
-            
-         </style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="blog.css">
+      <title>11ty Blog </title>
     </head>
     <body>
       <header>
-         <a href="/">Home</a>
-         <a href="/posts/aboutme">About me</a>
-         <a href="/posts/my-first-post">My drawings</a>
-         <a href="/posts/my-second-post"></a>
-      </header>
-      
-         <a href="https://ana-h-blog.netlify.app/posts/"><h2><u>POSTS</u></h2></a>
-          
-      
+         <nav>
+            <h1>ANA MARIA <span>||</span> HORHOIANU</h1>
+              <ul>
+                <li><a class="menu" href="#">Home</a></li>
+                <li><a class="menu" href="#">About</a></li>
+                <li><a class="menu" href="https://ana-h-blog.netlify.app/posts/">Posts</a></li>
+                <li><a class="menu" href="#">Feedback</a></li>
+              </ul>
+         </nav>
+           <div class="dropdown">
+               <button class="drop">MENU</button>
+              <nav class="content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Posts</a>
+                <a href="#">Feedback</a>
+              </nav>
+           </div>
+      </header>   
       <main>
+           <!--   {{ content|safe }}  -->
+         <img src="img1.jpg">
+         
+         <button class="button"type="button" href="#">Projects</button>
+              
+         <br/>
+         <br/>
 
-          
-  
- 
-         <h1> Ana Maria Horhoianu </h1>
-         <h4> 11ty Blog </h4>
-              {{ content|safe }}
-
-        <br/>
-
-
-       <a class="weatherwidget-io" href="https://forecast7.com/en/53d65n1d79/huddersfield/" 
+      <a class="weatherwidget-io" href="https://forecast7.com/en/53d65n1d79/huddersfield/" 
           data-label_1="HUDDERSFIELD" 
           data-label_2="WEATHER" 
           data-font="Palatino" 
@@ -65,30 +46,32 @@
           data-lowcolor="#000" >HUDDERSFIELD WEATHER</a>
 
         <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
-            if(!d.getElementById(id)){
-              js=d.createElement(s);
-              js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-         }}
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+                        if(!d.getElementById(id)){
+                        js=d.createElement(s);
+                        js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+                  fjs.parentNode.insertBefore(js,fjs);
+                     }}
 
-        (document,'script','weatherwidget-io-js');
+                  (document,'script','weatherwidget-io-js');
         </script>
 
         <br/>
-        <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+        <iframe  class="weather" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
         <br/>
-        
+
+        <h2><u>News</u></h2>
+
         <article>
-       
+            
             {% for article in news.articles %}
             
             <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
             <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
             
             {% endfor %}
+       </article>
 
-         </article>
          <br/>
 
       </main>
