@@ -4,159 +4,159 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>11ty Blog </title>
-      <script>
+      <style>
       *{ 
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
- }
- body {
-    background-color: #c5c6c7;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding: 0;
-    font-family: microsoft;
- }
- header {
-    width: 100%;
-    height: 100px;
-    font-size: 20px;
- }
- article {
-    background-color: #eddede;
-    padding-left:20px;
-    padding-right: 20px;
-    width: 70%;
-    margin:auto;
- }
- h1 {
-    position: absolute;
-    float: left;
-    margin-left: 2%;
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    background-color: #42597c;
-    border-radius: 35px;
-    padding: 10px;
- }
- img {
-    width:100%;
-    margin-top: -100px;
- }
- span {
-    color: black;
- }
- ul {
-    width: auto;
-    float: right;
-    margin-top: 8px;
-    font-weight: bold;
-    margin: 20px;
- }
- li{
-    display: inline-block;
-    position: sticky;
- }
-.menu {
-    padding: 20px;
-    text-align: center;
-    color: rgb(53, 53, 146);
-    text-decoration: none;
-    font-size: 23px;
- }
- a:hover {
-    color: white;
-    transition: 0.5s;
-    background-color: #42597c;
-    border-radius: 35px;
- }
- @media only screen and (max-width: 850px) {
- ul {
-     display:none;
- }
- div.dropdown {
-    display: inline-block;
-  }
-  li {
-    display: block;
-    background-color: white;
-    border-radius: 15px;
-    padding: 5px;
-    }
- a {
-    padding: 4;
+         margin: 0px;
+         padding: 0px;
+         box-sizing: border-box;
+      }
+      body {
+         background-color: #c5c6c7;
+         margin: 0 auto;
+         text-align: center;
+         width: 100%;
+         height: auto;
+         padding: 0;
+         font-family: microsoft;
+      }
+      header {
+         width: 100%;
+         height: 100px;
+         font-size: 20px;
+      }
+      article {
+         background-color: #eddede;
+         padding-left:20px;
+         padding-right: 20px;
+         width: 70%;
+         margin:auto;
+      }
+      h1 {
+         position: absolute;
+         float: left;
+         margin-left: 2%;
+         color: white;
+         text-align: center;
+         margin-top: 15px;
+         background-color: #42597c;
+         border-radius: 35px;
+         padding: 10px;
+      }
+      img {
+         width:100%;
+         margin-top: -100px;
+      }
+      span {
+         color: black;
+      }
+      ul {
+         width: auto;
+         float: right;
+         margin-top: 8px;
+         font-weight: bold;
+         margin: 20px;
+      }
+      li{
+         display: inline-block;
+         position: sticky;
+      }
+      .menu {
+         padding: 20px;
+         text-align: center;
+         color: rgb(53, 53, 146);
+         text-decoration: none;
+         font-size: 23px;
+      }
+      a:hover {
+         color: white;
+         transition: 0.5s;
+         background-color: #42597c;
+         border-radius: 35px;
+      }
+      @media only screen and (max-width: 850px) {
+      ul {
+         display:none;
+      }
+      div.dropdown {
+         display: inline-block;
+      }
+      li {
+         display: block;
+         background-color: white;
+         border-radius: 15px;
+         padding: 5px;
+         }
+      a {
+         padding: 4;
 
- }
- h1 {
-     margin-top: 18px;
-    font-size: 23px;
-    background-color: #42597c;
-    border-radius: 35px;
-    padding: 10px;
- }
- .dropdown {
-    display: inline-block;
-  }
- }  
- 
- .drop {
-    background-color: #42597c;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: none;
-    margin-left: 80%;
-    margin-top: 20px;
-  }
-  
-  .content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-left: -80px;
-  }
-  
-  .content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .content {display: block;}
-  
-  .dropdown:hover .drop {background-color: #5665be;}
+      }
+      h1 {
+         margin-top: 18px;
+         font-size: 23px;
+         background-color: #42597c;
+         border-radius: 35px;
+         padding: 10px;
+      }
+      .dropdown {
+         display: inline-block;
+      }
+      }  
+      
+      .drop {
+         background-color: #42597c;
+         color: white;
+         padding: 16px;
+         font-size: 16px;
+         border: none;
+      }
+      
+      .dropdown {
+         position: relative;
+         display: none;
+         margin-left: 80%;
+         margin-top: 20px;
+      }
+      
+      .content {
+         display: none;
+         position: absolute;
+         background-color: #f1f1f1;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+         margin-left: -80px;
+      }
+      
+      .content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+      
+      .content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .content {display: block;}
+      
+      .dropdown:hover .drop {background-color: #5665be;}
 
-.weather {
-    width: 90%;
-}
+      .weather {
+         width: 90%;
+      }
 
-.button {
-    align-items: center;
-    margin-top: -30%;
-    width: 150px;
-    height: 40px;
-    background-color: #95cad1;
-    border:2px solid #688f94;
-    border-radius: 30px;
-    font-size: 23px;
-    font-weight: bold;
-    font-family: microsoft;
-}
-</script>
+      .button {
+         align-items: center;
+         margin-top: -30%;
+         width: 150px;
+         height: 40px;
+         background-color: #95cad1;
+         border:2px solid #688f94;
+         border-radius: 30px;
+         font-size: 23px;
+         font-weight: bold;
+         font-family: microsoft;
+      }
+      </style>
     </head>
     <body>
       <header>
@@ -181,7 +181,7 @@
       </header>   
       <main>
            <!--   {{ content|safe }}  -->
-         <img src="img1.jpg">
+         <img src="images/uploads/img1.jpg">
          
          <button class="button"type="button" href="#">Projects</button>
               
