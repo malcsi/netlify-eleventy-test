@@ -1,12 +1,100 @@
 <html>
     <head>
-         <title>11ty Blog -A</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>11ty Blog </title>
+      <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-      <h1>
-         11ty Blog -A
-     </h1>
-      
-Hello! Welcome to my first Eleventy + Netlify CMS blog!
+      <header>
+         <nav>
+            <h1>ANA MARIA <span>||</span> HORHOIANU</h1>
+              <ul>
+                <li><a class="menu" href="#">Home</a></li>
+                <li><a class="menu" href="#">About</a></li>
+                <li><a class="menu" href="https://ana-h-blog.netlify.app/posts/">Posts</a></li>
+                <li><a class="menu" href="#">Feedback</a></li>
+              </ul>
+         </nav>
+           <div class="dropdown">
+               <button class="drop">MENU</button>
+              <nav class="content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Posts</a>
+                <a href="#">Feedback</a>
+              </nav>
+           </div>
+      </header>   
+      <main>
+           <!--   
+Hello! Welcome to my first Eleventy + Netlify CMS blog!  -->
+         <img src="images/uploads/img1.jpg">
+         
+         <button class="bttn"type="button" href="#">Projects</button>
+              
+         <br/>
+         <br/>
+
+      <a class="weatherwidget-io" href="https://forecast7.com/en/53d65n1d79/huddersfield/" 
+          data-label_1="HUDDERSFIELD" 
+          data-label_2="WEATHER" 
+          data-font="Palatino" 
+          data-icons="Climacons Animated" 
+          data-theme="mountains" 
+          data-textcolor="#000" 
+          data-lowcolor="#000" >HUDDERSFIELD WEATHER</a>
+
+        <script>
+                  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+                        if(!d.getElementById(id)){
+                        js=d.createElement(s);
+                        js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';
+                  fjs.parentNode.insertBefore(js,fjs);
+                     }}
+
+                  (document,'script','weatherwidget-io-js');
+        </script>
+
+        <br/>
+        <iframe  class="weather" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+        <br/>
+
+        <h2><u>News</u></h2>
+
+        <article>
+            
+            
+            
+            <h2><a href="https://www.nbcnews.com/news/sports/youtuber-logan-paul-goes-distance-against-mayweather-boxing-exhibition-n1269795"></a>YouTuber Logan Paul goes distance against Mayweather in boxing exhibition - NBC News</a></h2>
+            <span>NBC News - <time>2021-06-07T09:25:17Z</time></span>
+            
+            
+            
+            <h2><a href="https://www.theverge.com/2021/6/7/22522265/dell-alienware-area-51m-r1-gaming-laptop-upgradeability-unprecedented-lawsuit-claims-misleading"></a>Dell sued over Alienware laptop’s ‘unprecedented upgradeability’ claims - The Verge</a></h2>
+            <span>The Verge - <time>2021-06-07T09:15:58Z</time></span>
+            
+            
+            
+            <h2><a href="https://www.nytimes.com/2021/06/07/world/asia/pakistan-train-collision.html"></a>Train Crash in Pakistan Kills Dozens - The New York Times</a></h2>
+            <span>New York Times - <time>2021-06-07T08:19:26Z</time></span>
+            
+            
+            
+            <h2><a href="https://www.tmz.com/2021/06/07/ti-buys-atlanta-mansion-over-3-million/"></a>T.I. Drops $3.27 Million on Atlanta Mansion - TMZ</a></h2>
+            <span>TMZ - <time>2021-06-07T07:50:00Z</time></span>
+            
+            
+            
+            <h2><a href="https://www.theverge.com/2021/6/7/22522249/apple-spatial-audio-event-wwdc-2021"></a>Apple apparently has a spatial audio event right after the WWDC keynote - The Verge</a></h2>
+            <span>The Verge - <time>2021-06-07T07:49:03Z</time></span>
+            
+            
+       </article>
+
+         <br/>
+
+      </main>
     </body>
 </html>
