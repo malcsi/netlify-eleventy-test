@@ -102,7 +102,7 @@
     display: block;
  }
 
-.content a:hover {background-color: #ddd;}
+.content a.menu:hover {background-color: #ddd;}
 
 .dropdown:hover .content {display: block;}
 
