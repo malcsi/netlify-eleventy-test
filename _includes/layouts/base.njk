@@ -55,11 +55,11 @@
 
                   (document,'script','weatherwidget-io-js');
         </script>
-
+        <br/>
+      <article>
         <h2><u>News</u></h2>
         <br/>
-        <article>
-            
+        
             {% for article in news.articles %}
             <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
             
