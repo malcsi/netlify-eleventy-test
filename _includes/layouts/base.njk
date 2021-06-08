@@ -3,7 +3,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>11ty Blog </title>
+      <title> 11ty Blog </title>
       <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
@@ -56,16 +56,13 @@
                   (document,'script','weatherwidget-io-js');
         </script>
 
-        <br/>
-        <iframe  class="weather" height="450" src="https://embed.windy.com/embed2.html?lat=53.633&lon=-1.752&detailLat=53.633&detailLon=-1.752&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
-        <br/>
+
 
         <h2><u>News</u></h2>
-
+        <br/>
         <article>
             
             {% for article in news.articles %}
-            
             <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
             <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
             

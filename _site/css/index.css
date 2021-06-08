@@ -120,7 +120,11 @@
     border-radius: 30px;
     font-size: 23px;
     font-weight: bold;
-    font-family: microsoft;
+    font-family: calibri;
+ }
+ .weatherwidget-io {
+    margin-left: 10%;
+    margin-right: 10%;
  }
 @media only screen and (max-width: 960px) {
  ul {
