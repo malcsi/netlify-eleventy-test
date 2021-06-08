@@ -62,8 +62,9 @@
             
             {% for article in news.articles %}
             <h2><a href="{{ article.url }}"></a>{{ article.title }}</a></h2>
+            <br/>
             <span>{{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
-            
+            <br/>
             {% endfor %}
        </article>
 
