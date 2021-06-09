@@ -129,18 +129,27 @@
         width: 100px;
         height: 30px;
     }
+    .btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+    }
     </style>
  </head>
  <body>
   <header>
    <div class="container">
+    <a href="https://ana-h-blog.netlify.app/"><button class="btn">&larr; Back</button></a>
     <h1 id="title">Survey Form</h1>
      <p id="description">Hi there! Thanks for stopping by! </p>
     <p>With this poll we want to find out how the general public views <strong>MAGIC</strong> in <strong>2021</strong>.</p>
   </header>
   <main>
     
-     <form id="survey-form">
+     <form name="survey" method="POST" data-netlify="true">
      <div class="form-group">
        <label id="name-label" for="name">Name</label>
        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
