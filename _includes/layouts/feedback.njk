@@ -129,13 +129,17 @@
           width: 120px;
           background-color: transparent;
         }
+        #tandc, #mc {
+        margin: 20px;
+        }       
+
       </style>
     </head>
     <body>
     <main>
      <p>Hover me</p>
     <img src="https://lh3.googleusercontent.com/proxy/c_zZ5oUA5Iz6el6wO50phlie4ZjOPqOHaroNuE1sSMqB39KnEcQjRA9WoRbvxstvU-fNBbFO2d5NtwNQszkJDTmrXl3YvSkkw0cNFngj"/>
-   <a href="https://ana-h-blog.netlify.app/"><button class="btn">&larr; Back</button></a>
+    <a href="https://ana-h-blog.netlify.app/"><button class="btn">&larr; Back</button></a>
      <h2> Thank you for taking the time to provide your feedback.</h2>
 
      <form name="feedback" method="POST" data-netlify="true">
@@ -149,7 +153,15 @@
      </div>
      <div class="form-group1">
        <label for="message">Message</label>
+       
        <input type="text" name="message"  id="message" class="form-control" />
+     </div>
+       <input type="checkbox" id="tandc" name="tandc" value="TandC">
+    <label for="tandc" required> I agree to the Terms and Conditions</label><br>
+       
+       <input type="checkbox" id="mc" name="mc" value="Mc">
+    <label for="mc" required> Sign up to Mailchimp</label><br>
+     <div>
        <button type="submit">Send</button>
      </div>
       </form>
