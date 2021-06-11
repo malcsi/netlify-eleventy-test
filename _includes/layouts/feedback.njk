@@ -3,168 +3,56 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="feedback.css">
       <title> Feedback </title>
-      <style>
-        *,
-        *::before,
-        *::after {
-          box-sizing: border-box;
-        }
-
-        body {
-          font-family: georgia;
-          width: 100%;
-          height: 100% auto;
-          margin: auto;
-          padding: 25px;
-          font-weight: bold;
-          font-size: 21px;
-        }
-
-        body::before {
-          content: '';
-          position: fixed;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          margin: auto;
-          z-index: -1;
-          background-color: #2e4d6b;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-
-        .form-group {
-          font-size: 20px;
-          padding: 15px;
-          margin: auto;
-          display: block;
-          text-align: center;
-          width: 250px;
-        }
-
-        .form-control {
-          display: block;
-          width: 100%;
-          height: 30px;
-          color: #999999;
-          border: 1px solid;
-          border-radius: 5px;
-          margin: auto;
-          padding-left: 10px;
-        }
-
-        main {
-          padding: 40px;
-          border-radius: 75px;
-          z-index: 2;
-          background: radial-gradient(circle at 50% 50%, #a2abff, #9daafd, #8ea9f7, #7aa6ec, #65a1dd, #539bcb, #4993b7, #458ba4, #478393, #497c86, #4a787e, #4b767b);
-          text-align: center;
-          box-shadow: 0px -3px 28px 13px #172e43;
-          line-height: 25px;
-        }
-
-        #message {
-          width: 550px;
-          height: 300px;
-        }
-
-        button {
-          font-size: 22px;
-          padding-left: 30px;
-          padding-right: 30px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          border: 2px solid;
-          border-radius: 15px;
-          margin: 25px;
-          font-weight: bold;
-          transition-duration: 0.4s;
-        }
-
-        button:hover {
-          background-color: #0f4980;
-          color: white;
-        }
-        
-        img {
-          width: 170px;
-          margin-top: -56px;
-        }
-
-        img:hover {
-          animation: shake 0.5s;
-          animation-iteration-count: infinite;
-        }
-
-        @keyframes shake {
-          0% { transform: translate(1px, 1px) rotate(0deg); }
-          10% { transform: translate(-1px, -2px) rotate(-1deg); }
-          20% { transform: translate(-3px, 0px) rotate(1deg); }
-          30% { transform: translate(3px, 2px) rotate(0deg); }
-          40% { transform: translate(1px, -1px) rotate(1deg); }
-          50% { transform: translate(-1px, 2px) rotate(-1deg); }
-          60% { transform: translate(-3px, 1px) rotate(0deg); }
-          70% { transform: translate(3px, 1px) rotate(-1deg); }
-          80% { transform: translate(-1px, -1px) rotate(1deg); }
-          90% { transform: translate(1px, 2px) rotate(0deg); }
-          100% { transform: translate(1px, -2px) rotate(-1deg); }
-        }
-
-        h2 {
-          line-height: 40px;
-        }
-
-        p {
-          margin-top: -36px;
-        }
-
-        .btn {
-          position: absolute;
-          top: 7%;
-          left: 5%;
-          border: none;
-          width: 120px;
-          background-color: transparent;
-        }
-        #tandc, #mc {
-        margin: 20px;
-        }       
-
-      </style>
     </head>
     <body>
-    <main>
-     <p>Hover me</p>
-    <img src="https://lh3.googleusercontent.com/proxy/c_zZ5oUA5Iz6el6wO50phlie4ZjOPqOHaroNuE1sSMqB39KnEcQjRA9WoRbvxstvU-fNBbFO2d5NtwNQszkJDTmrXl3YvSkkw0cNFngj"/>
-    <a href="https://ana-h-blog.netlify.app/"><button class="btn">&larr; Back</button></a>
-     <h2> Thank you for taking the time to provide your feedback.</h2>
+        <header>
+            <nav>
+                <h3 id="logo">ANA MARIA || HORHOIANU</h3>
+            </nav>
+            <section>
+                <div class="hero">
+                    <img src="abstract.jpg" alt="planet">
+                    <div class="headline">
+                    <a href="https://ana-h-blog.netlify.app/"><button class="btn">&larr; Back</button></a>
+                    <h2> Thank you for taking the time to provide your feedback.</h2>
 
-     <form name="feedback" method="POST" data-netlify="true">
-     <div class="form-group">
-       <label for="name">Name</label>
-       <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
-     </div>
-     <div class="form-group">
-       <label id="email-label" for="email">Email</label>
-       <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
-     </div>
-     <div class="form-group1">
-       <label for="message">Message</label>
-       
-       <input type="text" name="message"  id="message" class="form-control" />
-     </div>
-       <input type="checkbox" id="tandc" name="tandc" value="TandC">
-    <label for="tandc" required> I agree to the Terms and Conditions</label><br>
-       
-       <input type="checkbox" id="mc" name="mc" value="Mc">
-    <label for="mc" required> Sign up to Mailchimp</label><br>
-     <div>
-       <button type="submit">Send</button>
-     </div>
-      </form>
-    </main>
+                    <form name="feedback" method="POST" data-netlify="true">
+                    <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                    </div>
+                    <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+                    </div>
+                    <div class="form-group1">
+                    <label class="text" for="message">Message</label>
+                    <textarea class="message" name="comment" for="message" id="message"></textarea>
+                    </div>
+                    <input type="checkbox" id="tandc" name="tandc" value="TandC">
+                    <label for="tandc" required> I agree to the <a href="#" >Terms and Conditions</a></label><br>
+                
+                    <div>
+                    <button class="submit" type="submit">Send</button>
+                    </div>
+                  </form>
+                </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <div class="slider"></div>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="feedback.js"></script>
     </body>
 </html>
