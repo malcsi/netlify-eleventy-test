@@ -59,24 +59,23 @@
         height: 100%;
         width: 100%;
         position: relative;
-        
     }
 
     .hero::after {
         content: "";
-        background: black;
+        background: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        opacity: 0.3;
+        opacity: 0.2;
     }
     .headline {
         position: absolute;
         top: 70%;
         left: 10%;
-        font-size: 1.5em;
+        font-size: 1.3em;
         transform: translate(-10%, -70%);
         color: white;
         z-index: 2;
@@ -86,22 +85,8 @@
     .description {
         font-size: 1.4em;
     }
-    .description::after{
-        content: "";
-        background: white;
-        width: 103%;
-        height: 100%;
-        position: absolute;
-        left: -2%;
-        top: 0;
-        opacity: 0.1;
-        border:1px solid;
-        border-radius: 20px;
-    }
     .back {
-        float: right;
-        margin-right: -16.6em;
-        padding: 0.8em;
+        padding: 0.6em;
         border:1px solid;
         border-radius: 0.6em;
         font-family: 'Fira Sans', sans-serif;
@@ -138,11 +123,6 @@
     a{
         color:rgb(88, 86, 196);
     }
-    @media screen and (min-width:1080px) {
-        .back {
-            margin-left: 8em;
-        }
-    }
 
     @media only screen and (max-width: 768px) {
       nav {
@@ -164,10 +144,8 @@
         margin: 14px 0 10px 5px;
       }
       .back {
-          position: absolute;
-          margin-left: -4em;
-          margin-top: -4em;
-          padding: 0.8em;
+          margin: 0.5em;
+          padding: 0.3em;
           font-size: 0.8rem;
       }
       form {
