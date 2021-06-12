@@ -138,6 +138,12 @@
     a{
         color:rgb(88, 86, 196);
     }
+    @media screen and (min-width:1080) {
+        .back {
+            margin-left: 8em;
+        }
+    }
+
     @media only screen and (max-width: 768px) {
       nav {
        display: inline;
@@ -158,8 +164,9 @@
         margin: 14px 0 10px 5px;
       }
       .back {
-          display: absolute;
-          margin: 2em;
+          position: absolute;
+          margin-left: -4em;
+          margin-top: -4em;
           padding: 0.8em;
           font-size: 0.8rem;
       }
