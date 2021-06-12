@@ -14,6 +14,7 @@
     body {
         background-color: #012639;
     }
+
     .hero img {
         width: 100%;
         height: 100%;
@@ -38,9 +39,11 @@
         width: 90%;
         text-align: center;
     }
+
     .hamburger {
         justify-self: end;
     }
+
     nav {
         display: grid;
         grid-template-columns:10% 1fr 1fr 10%;
@@ -53,8 +56,9 @@
         height: 80vh;
         justify-content: center;
         align-items: center;
-        background: #023a5b;
+        background: #03598b;
     }
+
     .hero {
         height: 100%;
         width: 100%;
@@ -63,39 +67,45 @@
 
     .hero::after {
         content: "";
-        background: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
         width: 100%;
         height: 100%;
         position: absolute;
         left: 0;
         top: 0;
-        opacity: 0.2;
+        opacity: 0.4;
     }
+
     .headline {
         position: absolute;
         top: 70%;
         left: 10%;
-        font-size: 1.3em;
+        font-size: 1.1em;
         transform: translate(-10%, -70%);
-        color: white;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-family:Georgia, Times, 'Times New Roman', serif;
         z-index: 2;
         line-height: 2em;
     }
+
     .back {
-        padding: 0.6em;
+        padding: 0.4em 0.8em;
         border:1px solid;
         border-radius: 0.6em;
         font-family: 'Fira Sans', sans-serif;
-        font-size: 0.6em;
+        font-size: 0.8em;
+        margin-bottom: 3%;
     }
 
     .form-control {
-        padding: 2%;
+        padding: 1%;
         margin-left: 2em;
         width: 20rem;
         border:1px solid;
         border-radius: 20px;
     }
+
     .submit {
         margin-bottom: 0.1em;
         font-size: 0.8em;
@@ -104,10 +114,11 @@
         border:1px solid ;
         border-radius: 0.6em;
     }
+
     .message{
         width: 30.8em;
         height: 7em;
-        border:1px solid black;
+        border:1px solid;
         border-radius: 20px;
         padding:0 10;
     }
@@ -117,38 +128,51 @@
     }
 
     a{
-        color:rgb(88, 86, 196);
+        color:rgb(68, 0, 255);
+        font-weight: bold;
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1000px) {
+      section {
+        height: 90%;
+        font-size: 0.8rem;
+      }
       nav {
        display: inline;
-       height: 2em;
-       font-size: 0.8em;
+       height: 1.8em;
+       font-size: 0.6em;
       }
+
       .headline {
         margin: -0.5em 1em 0em 1em;
-        font-size: 0.9rem;
-    }
+      }
+
       .message {
         width: 90%;
       }
+
       .description {
         margin: 2%;
       }
+
       .submit {
-        margin: 14px 0 10px 5px;
+        margin-top: 4%;
+        padding: 0.3em;
+        font-size: 0.8rem;
       }
+
       .back {
-          padding: 0.3em;
-          font-size: 0.8rem;
+        padding: 0.3em;
+        font-size: 0.8rem;
       }
+
       form {
         display: block;
         margin: 5%;
       }
+
       #name, #email, #message {
-        width: 80%;
+        width: 90%;
       }
     }
     </style>
