@@ -36,13 +36,7 @@
         color: white;
         margin-top: 0.7rem;
         width: 90%;
-    }
-    h3{
-        padding-top: 6px;
         text-align: center;
-        border:1px;
-        border-radius: 30px;
-        background: #023a5b;
     }
     .hamburger {
         justify-self: end;
@@ -65,6 +59,7 @@
         height: 100%;
         width: 100%;
         position: relative;
+        
     }
 
     .hero::after {
@@ -88,14 +83,14 @@
         line-height: 2em;
     }
 
-    h2 {
+    .description {
         font-size: 1.4em;
     }
-    h2::after{
+    .description::after{
         content: "";
         background: white;
         width: 103%;
-        height: 13%;
+        height: 100%;
         position: absolute;
         left: -2%;
         top: 0;
@@ -103,7 +98,7 @@
         border:1px solid;
         border-radius: 20px;
     }
-    .btn {
+    .back {
         float: right;
         margin-right: -16.6em;
         padding: 0.8em;
@@ -143,6 +138,33 @@
     a{
         color:rgb(88, 86, 196);
     }
+    @media only screen and (max-width: 768px) {
+      nav {
+       display: inline;
+       height: 2em;
+       font-size: 0.8em;
+      }
+      .headline {
+        margin: -1.4em 1em 0em 1em;
+        font-size: 0.9rem;
+        
+    }
+      .message {
+        width: 29em;
+      }
+      .description {
+        height: 3em;
+      }
+      .submit {
+        margin: 14px 0 10px 5px;
+      }
+      .back {
+          display: absolute;
+          margin: 2em;
+          padding: 0.8em;
+          font-size: 0.8rem;
+      }
+    }
     </style>
       <title> Feedback </title>
     </head>
@@ -155,8 +177,8 @@
                 <div class="hero">
                     <img src="https://i.ibb.co/qy0TYyh/abstract.jpg" alt="planet">
                     <div class="headline">
-                    <a href="https://ana-h-blog.netlify.app/"><button class="btn">&larr; Back</button></a>
-                    <h2> Thank you for taking the time to provide your feedback.</h2>
+                    <a href="https://ana-h-blog.netlify.app/"><button class="back">&larr; Back</button></a>
+                    <h2 class="description"> Thank you for taking the time to provide your feedback.</h2>
 
                     <form name="feedback" method="POST" data-netlify="true">
                     <div class="form-group">
