@@ -22,11 +22,6 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
-  });
-
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
     if( n < 0 ) {
@@ -56,9 +51,14 @@ module.exports = function(eleventyConfig) {
     return [...tagSet];
   });
 
-  // Copy the `img` and `css` folders to the output
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
+module.exports = function (eleventyConfig) {
+    eleventyConfig.addPassthroughCopy("images");
+    eleventyConfig.addPassthroughCopy("admin");
+    eleventyConfig.addPassthroughCopy("css");
+    eleventyConfig.addPassthroughCopy("js");
+    eleventyConfig.addPassthroughCopy("source");
+        data: "_data"
+};
 
   // Customize Markdown library and settings:
   let markdownLibrary = markdownIt({
@@ -101,15 +101,7 @@ module.exports = function(eleventyConfig) {
       "yml"
     ],
 
-    // -----------------------------------------------------------------
-    // If your site deploys to a subdirectory, change `pathPrefix`.
-    // Don’t worry about leading and trailing slashes, we normalize these.
-
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
+    
 
     // Optional (default is shown)
     pathPrefix: "/",
