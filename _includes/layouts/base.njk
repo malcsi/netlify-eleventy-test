@@ -14,16 +14,16 @@
       <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-      <header>
+      <header class="my-nav">
         <div class="logo">
 				<img src="https://i.ibb.co/tpzXR75/logo1.png" alt="logo" />
 		</div>
 			<nav>
 				<ul class="nav-links">
-					<li><a class="nav-link" href="#">Home</a></li>
+					<li><a class="nav-link" href="https://ana-h-blog.netlify.app/">Home</a></li>
 					<li><a class="nav-link" href="#">About</a></li>
-					<li><a class="nav-link" href="#">Posts</a></li>
-          <li><a class="nav-link" href="#">Feedback</a></li>
+					<li><a class="nav-link" href="https://ana-h-blog.netlify.app/posts">Posts</a></li>
+          <li><a class="nav-link" href="https://ana-h-blog.netlify.app/projects/feedback/">Feedback</a></li>
 				</ul>
 			</nav>
       </header>
@@ -81,5 +81,16 @@
    </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
     </body>
 </html>
