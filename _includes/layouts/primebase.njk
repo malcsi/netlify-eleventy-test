@@ -19,9 +19,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  html,body {
-     height: 100%;
-  }
   body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
@@ -66,7 +63,7 @@
       padding: 20px;
       font-size: 1.7em;
    }
-   footer {
+   .footer {
    background: linear-gradient(#fff,#17379c, #17379c);
    height: 4rem;
    color: white;
@@ -82,6 +79,11 @@ svg {
    position: relative;
    
    margin-right: 4em;
+}
+.content {
+  min-height: calc(82vh - 90px);
+  margin-left: 7%;
+  margin-top: 5vh;
 }
 @media (max-width: 768px) {
    .logo img {
@@ -111,9 +113,12 @@ svg {
 			</nav>
       </header>
       <main>
-         {{ content|safe }}
+        <div class="content">
+             {{ content|safe }}
+        </div>
+        
       </main>
-      <footer>
+      <footer class="footer">
     <nav class="navbar-light footer">
       <div class="icons">
         <a class="navbar-brand" >&#169;2021</a>
