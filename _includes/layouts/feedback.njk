@@ -8,10 +8,10 @@
       <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <style>
-      * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .hero img {
@@ -30,46 +30,46 @@
         z-index: -1;
     }
     .logo img {
-   max-width: 33vh;
-   height:auto;
-   margin-left: 5%;
-  }
-  .my-nav {
-   display: flex;
-   width: 100%;
-   background: linear-gradient(#17379c, #17379c, white);
-   height: 15vh;
-   margin: auto;
-   align-items: center;
-   }
+        max-width: 33vh;
+        height:auto;
+        margin-left: 5%;
+    }
+    .my-nav {
+        display: flex;
+        width: 100%;
+        background: linear-gradient(#17379c, #17379c, white);
+        height: 15vh;
+        margin: auto;
+        align-items: center;
+    }
 
-   .logo-container,
-   .nav-links {
-	   display: flex;
-   }
-   .logo-container {
-      flex: 0.5;
-   }
-   nav {
-      flex: 2.5;
-   }
-   .nav-links {
-      justify-content: space-around;
-      list-style: none;
-   }
-   .nav-link {
-      color: #FFF;
-      font-size: 1.5rem;
-      text-decoration: none;
-   }
-   .nav-link:hover {
-      background-color: white;
-      color:#0a517d;
-      border: 1px solid;
-      border-radius: 40px;
-      padding: 20px;
-      font-size: 1.7em;
-   }
+    .logo-container,
+    .nav-links {
+	      display: flex;
+    }
+    .logo-container {
+        flex: 0.5;
+    }
+    nav {
+        flex: 2.5;
+    }
+    .nav-links {
+        justify-content: space-around;
+        list-style: none;
+    }
+    .nav-link {
+        color: #FFF;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+    .nav-link:hover {
+        background-color: white;
+        color:#0a517d;
+        border: 1px solid;
+        border-radius: 40px;
+        padding: 20px;
+        font-size: 1.7em;
+    }
     .hamburger {
         justify-self: end;
     }
@@ -100,9 +100,9 @@
 
     .headline {
         position: absolute;
-        top: 70%;
+        top: 65%;
         left: 10%;
-        font-size: 1.1em;
+        font-size: 0.9vw;
         transform: translate(-10%, -70%);
         color: rgb(255, 255, 255);
         font-weight: bold;
@@ -117,7 +117,7 @@
         border-radius: 0.6em;
         font-family: 'Fira Sans', sans-serif;
         font-size: 0.8em;
-        margin-bottom: 3%;
+        margin-bottom: 1vh;
     }
 
     .form-control {
@@ -129,8 +129,7 @@
     }
 
     .submit {
-        margin-bottom: 0.1em;
-        font-size: 0.8em;
+        font-size: 0.9em;
         padding: 0.4em 0.8em;
         font-family: 'Fira Sans', sans-serif;
         border:1px solid ;
@@ -144,38 +143,38 @@
         border-radius: 20px;
         padding:0 10;
     }
-
-    .text {
-        display: block;
+    .form-group {
+      display: block;
     }
-
+    
     a{
         color:rgb(68, 0, 255);
         font-weight: bold;
     }
+    
     footer {
-   background: linear-gradient(#fff,#17379c, #17379c);
-   height: 4rem;
-   color: white;
-   position: static;
-   bottom: 0;
-}
-.navbar-brand {
-  color: white;
-   margin-top: 1rem;
-   margin-left: 2em;
-   font-size: 1.5em;
-}
-svg {
+        background: linear-gradient(#fff,#17379c, #17379c);
+        height: 4rem;
+        color: white;
+        position: static;
+        bottom: 0;
+    }
+
+    .navbar-brand {
+        color: white;
+        margin-top: 1rem;
+        margin-left: 2em;
+        font-size: 1.5em;
+    }
+
+    svg {
    margin-right: 2em;
 }
     @media only screen and (max-width: 908px) {
-      section {
-        font-size: 0.7rem;
+      form {
+        font-size: 2vw;
       }
       .headline {
-        margin-top: -15%;
-        height: 76%;
         text-align: center;
       }
 
@@ -195,7 +194,7 @@ svg {
         margin-top: 3%;
       }
 
-      form {
+      .hero {
         display: block;
         margin: 5%;
       }
@@ -243,31 +242,32 @@ svg {
             <section>
                 <div class="hero">
                     <img src="https://i.ibb.co/qy0TYyh/abstract.jpg" alt="planet">
-                    <div class="headline">
-                    <a href="https://ana-h-blog.netlify.app/"><button class="back">&larr; Back</button></a>
-                    <h2 class="description"> Thank you for taking the time to provide your feedback.</h2>
+                   
+                      <div class="headline">
+                        <a href="https://ana-h-blog.netlify.app/"><button class="back">&larr; Back</button></a>
+                        <h2 class="description"> Thank you for taking the time to provide your feedback.</h2>
 
-                    <form name="feedback" method="POST" data-netlify="true">
-                    <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                        <form name="feedback" method="POST" data-netlify="true">
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+                          </div>
+                          <div class="form-group">
+                            <label id="email-label" for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+                          </div>
+                          <div class="form-group1">
+                            <label class="text" for="message">Message</label>
+                            <textarea class="message form-control" name="comment" for="message" id="message"></textarea>
+                          </div>
+                            <input type="checkbox" id="tandc" name="tandc" value="TandC">
+                            <label for="tandc" required> I agree to the <a href="#" >Terms and Conditions</a></label><br>
+                      
+                          <div>
+                          <button class="submit" type="submit">Send</button>
+                          </div>
+                      </form>
                     </div>
-                    <div class="form-group">
-                    <label id="email-label" for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
-                    </div>
-                    <div class="form-group1">
-                    <label class="text" for="message">Message</label>
-                    <textarea class="message" name="comment" for="message" id="message"></textarea>
-                    </div>
-                    <input type="checkbox" id="tandc" name="tandc" value="TandC">
-                    <label for="tandc" required> I agree to the <a href="#" >Terms and Conditions</a></label><br>
-                
-                    <div>
-                    <button class="submit" type="submit">Send</button>
-                    </div>
-                  </form>
-                </div>
                 </div>
             </section>
         </header>
