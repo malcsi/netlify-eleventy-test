@@ -56,13 +56,13 @@
    }
    .presentation {
       font-size: 4.7vw;
-      margin-left: -30%;
+      margin-left: -20%;
       margin-top: 7vh;
    }
    .design {
       width: 40vw;
       position: relative;
-      left: 5vw;
+      left: 4vw;
    }
    .projects-button {
       margin-top: 3em;
@@ -83,39 +83,7 @@
    .projects-button:active {
       background: #1b435e;
       }
-   @media (max-width: 768px) {
-      .logo img {
-   max-width: 15vh;
-   }
-   header {
-      height: 13vh;
-   }
-   .about {
-   display: flex;
-   flex-direction: column;
-   }
-   .wrap img {
-      margin-left:24%;
-   }
-   .nav-link {
-      font-size: 0.8rem;
-   }
-   .footer {
-   background: linear-gradient(#fff,#17379c, #17379c);
-   height: 4rem;
-   color: white;
-   position: sticky;
-   bottom: 0;
-}
-.navbar-brand {
-   margin-top: 0.5rem;
-   margin-left: 1em;
-   font-size: 1em;
-}
-svg {
-   margin-right: 1em;
-}
-}
+   
 .img3 img{
    position: relative;
    left:20%;
@@ -140,13 +108,12 @@ svg {
    margin: 3vw;
 }
  .wrap img {
-   position: relative;
-   left: 10%;
-   top: 30%;
+    position: relative;
+   left: 35%;
 	width: 25vw;
    margin-top: 1em;
 	filter: drop-shadow(0px 8px 8px black);
-	animation: drop 5s ease;
+	animation: drop 5s ease-in-out;
 }
 @keyframes drop {
 	0% {
@@ -161,17 +128,18 @@ svg {
 
 .about {
    display: flex;
+   flex-direction: column;
    border: 10px solid;
    margin: 3vw;
 }
 main {
    padding-bottom: 30px;
 }
-.footer {
+footer {
    background: linear-gradient(#fff,#17379c, #17379c);
    height: 4rem;
    color: white;
-   position: sticky;
+   position: static;
    bottom: 0;
 }
 .navbar-brand {
@@ -182,3 +150,21 @@ main {
 svg {
    margin-right: 2em;
 }
+@media (max-width: 768px) {
+   .logo img {
+      max-width: 15vh;
+   }
+   header {
+      height: 13vh;
+   }
+   .nav-link {
+      font-size: 0.8rem;
+   }
+   .navbar-brand {
+      margin: 1rem;
+      font-size: 1em;
+   }
+   svg {
+      margin-right: 1em;
+   }
+   }
