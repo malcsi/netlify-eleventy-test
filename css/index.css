@@ -40,7 +40,7 @@
    }
    .nav-link {
       color: #FFF;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-decoration: none;
    }
    .nav-link:hover {
@@ -49,7 +49,7 @@
       border: 1px solid;
       border-radius: 40px;
       padding: 20px;
-      font-size: 1.7em;
+      font-size: 1.4em;
    }
    .design { 
       width: 43%;
@@ -59,9 +59,9 @@
    }
    .presentation {
       position: absolute;
-      margin-left: 3vh;
+      margin-left: 1.5vh;
       margin-top: -30vw;
-      font-size: 4.5vw;
+      font-size: 4.2vw;
       letter-spacing: 2px;
    }
 
