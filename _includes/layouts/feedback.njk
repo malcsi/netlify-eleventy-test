@@ -152,7 +152,7 @@
     }
     
     a{
-        color:rgb(68, 0, 255);
+        color:rgb(133, 128, 146);
         font-weight: bold;
     }
     
@@ -176,7 +176,7 @@
 }
     @media only screen and (max-width: 908px) {
       form {
-        font-size: 2vw;
+        font-size: 3vw;
       }
       .headline {
         text-align: center;
@@ -191,6 +191,13 @@
         padding: 0.5em;
         font-size: 0.8rem;
       }
+
+      .back {
+        padding: 0.5em;
+        font-size: 0.8rem;
+        margin-top: 3%;
+      }
+
       .hero {
         display: block;
         margin: 5%;
@@ -229,10 +236,10 @@
 		</div>
 			<nav>
 				<ul class="nav-links">
-					<li><a class="nav-link" href="https://ana-h-blog.netlify.app/">Home</a></li>
+					<li><a class="nav-link" href="#">Home</a></li>
 					<li><a class="nav-link" href="#">About</a></li>
-					<li><a class="nav-link" href="https://ana-h-blog.netlify.app/posts">Posts</a></li>
-          <li><a class="nav-link" href="https://ana-h-blog.netlify.app/projects/feedback/">Feedback</a></li>
+					<li><a class="nav-link" href="#">Posts</a></li>
+          <li><a class="nav-link" href="#">Feedback</a></li>
 				</ul>
 			</nav>
         </header>
@@ -241,6 +248,7 @@
                     <img src="https://i.ibb.co/qy0TYyh/abstract.jpg" alt="planet">
                    
                       <div class="headline">
+                        <a href="https://ana-h-blog.netlify.app/"><button class="back">&larr; Back</button></a>
                         <h2 class="description"> Thank you for taking the time to provide your feedback.</h2>
 
                         <form name="feedback" method="POST" data-netlify="true">
@@ -256,7 +264,7 @@
                             <label class="text" for="message">Message</label>
                             <textarea class="message form-control" name="comment" for="message" id="message"></textarea>
                           </div>
-                          <br/>
+                          <br/><br/>
                             <input type="checkbox" id="tandc" name="tandc" value="TandC">
                             <label for="tandc" required> I agree to the <a href="#" >Terms and Conditions</a></label><br>
                       
