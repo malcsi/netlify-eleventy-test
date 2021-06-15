@@ -90,8 +90,8 @@
       }
    @media (min-width: 768px) {
       .presentation {
-      margin-left: 1vw;
-      margin-top: -10vw;
+      margin-left: 0;
+      margin-top: -20vw;
    }
    }
    @media (max-width: 768px) {
