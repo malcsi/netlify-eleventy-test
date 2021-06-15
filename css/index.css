@@ -92,7 +92,7 @@
 
    @media (max-width: 768px) {
       .logo img {
-   max-width: 23vh;
+   max-width: 15vh;
    }
    header {
       height: 13vh;
