@@ -1,7 +1,7 @@
 ---
 layout: layouts/bootstrap.njk
 title: Bootstrap Webpage
-description: This page has been built using Bootstrap CSS frameworks.
+description: Bootstrap CSS frameworks were used to create this page.
 date: 2021-06-12
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: About
-description: Find out more
+title: About 
+description: Brief description 
 date: 2021-05-31
 featuredImage: /images/uploads/image1.jpg
 ---

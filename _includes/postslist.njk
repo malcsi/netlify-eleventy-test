@@ -1,13 +1,14 @@
 <ul>
-    {% for post in postslist %}
+    {% for post in projectslist %}
         <li>
-            <strong>
+            <h4><strong>
                 <a href="{{ post.url | url }}">{{post.data.title}}</a>
             </strong>
             - 
-            <span>
+            <h>
                 {{post.data.description}}
-            </span>
+            </span></h4>
+            <br/>
         </li>
     {% endfor %}
 </ul>
