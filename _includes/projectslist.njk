@@ -2,13 +2,14 @@
     <h1 style="text-align: center;"><u>Posts</u></h1>
     {% for post in projectslist %}
         <li>
-            <h4><strong>
+            <h3><strong>
                 <a href="{{ post.url | url }}">{{post.data.title}}</a>
-            </strong></h3>
+            </strong>
             - 
-            </h3><h>
+            <h>
                 {{post.data.description}}
-            </span></h4>
+            </span></h3>
+            <br/>
         </li>
     {% endfor %}
 </ul>
