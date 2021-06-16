@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: About me
+title: About
 description: Find out more
 date: 2021-05-31
 featuredImage: /images/uploads/image1.jpg
