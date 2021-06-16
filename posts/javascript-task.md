@@ -31,12 +31,12 @@ The variable "temperature" is used in the second function. A code was created th
     coat = 'NO!'<br/>
   }<br/>
   return coat;<br/>
-}
+}<br/>
 document.write('Should I wear a coat if the temp is less than 50: ' + temperatureFunction(40));</code>
 
   <em>OUTPUT: <br/>Should I wear a coat if the temp is less than 50: YES!</em>
 
-
+<br/>---------------------------------------<br/>
 <code>
   function temperatureFunc(currentTemp) {<br/>
   let coat = "";<br/>
