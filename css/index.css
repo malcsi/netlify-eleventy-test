@@ -166,4 +166,10 @@ svg {
    svg {
       margin-right: 1em;
    }
+   .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+   }
    }
