@@ -150,7 +150,7 @@ footer {
 svg {
    position: relative;
    
-   margin-right: 4em;
+   margin-right: 3em;
 }
 @media (max-width: 768px) {
    .logo img {
