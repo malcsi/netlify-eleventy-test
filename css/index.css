@@ -156,6 +156,9 @@ svg {
    .logo img {
       max-width: 15vh;
    }
+   .design{
+      left: 3vw;
+   }
    header {
       height: 13vh;
    }
