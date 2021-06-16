@@ -1,14 +1,15 @@
 <ul>
-    <h1 style="text-align: center;"><u>Posts</u></h1>
+    <h1 style="text-align: center; color: #0a517d"><u>Posts</u></h1><br/><br/>
     {% for post in projectslist %}
         <li>
-            <h3><strong>
+            
+            <h4><strong>
                 <a href="{{ post.url | url }}">{{post.data.title}}</a>
             </strong>
             - 
             <h>
                 {{post.data.description}}
-            </span></h3>
+            </span></h4>
             <br/>
         </li>
     {% endfor %}
