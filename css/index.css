@@ -139,8 +139,9 @@ footer {
    background: linear-gradient(#fff,#17379c, #17379c);
    height: 4rem;
    color: white;
-   position: static;
+   width: 100%;
    bottom: 0;
+   clear: both;
 }
 .navbar-brand {
    margin-top: 1rem;
