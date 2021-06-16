@@ -5,7 +5,7 @@ description: Different functions used
 date: 2021-06-16
 ---
 
-
+<br/>
 In this exercise I have been working with JavaScript variables, "if" and "else if" statements, arithmetic operators and functions.
 I built a few functions in this assignment and invoked them as needed.
 As seen below, the first function outputs a sentence. 
