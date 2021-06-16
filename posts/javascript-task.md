@@ -17,7 +17,7 @@ function combineNames(firstName, secondName) { <br/>
   document.write('My name is :' + firstName + ' ' + secondName); <br/>
 }<br/>
 
-combineNames('Ana', 'Maria'); </code>
+combineNames('Ana', 'Maria');<br/> </code>
 <em>OUTPUT:<br/>
  My name is :Ana Maria </em>
 <br/><br/>
@@ -34,7 +34,7 @@ The variable "temperature" is used in the second function. A code was created th
 }
 document.write('Should I wear a coat if the temp is less than 50: ' + temperatureFunction(40));</code>
 
-  <em>OUTPUT: Should I wear a coat if the temp is less than 50: YES!</em>
+  <em>OUTPUT: <br/>Should I wear a coat if the temp is less than 50: YES!</em>
 
 
 <code>
