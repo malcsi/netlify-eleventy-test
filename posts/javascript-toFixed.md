@@ -23,7 +23,7 @@ document.write('Your total bill, with tip, is £' + total.toFixed(2));<br/>
 <em>
 OUTPUT:<br/>
 Your total bill, with tip, is £31.66<br/></em>
-<br/>
+
 <br/>--------------------------------<br/><br/>
 The second example is a procedural function that outputs the same result as the first.<br/><br/>
 <code>
