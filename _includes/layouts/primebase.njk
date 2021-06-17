@@ -77,6 +77,7 @@
 
          main {
             padding-bottom: 15px;
+            display: flex;
          }
          .footer {
             background: linear-gradient(#fff,#17379c, #17379c);
@@ -93,10 +94,12 @@
          }
        
          .content {
-            margin-left: 10%;
-            margin-right: 10%;
+            margin: 5% 5%;
          }
-
+         .paint {
+           width: 30vw;
+           margin-top: 5vh;
+         }
          @media (max-width: 768px) {
          .logo img {
             max-width: 15vh;
@@ -118,6 +121,9 @@
             padding: 16px;
             font-size: 1em;
          }
+         main {
+           flex-direction: column;
+         }
          }
       </style>
     </head>
@@ -136,6 +142,9 @@
 			</nav>
       </header>
       <main>
+         
+            <img class="paint" src="https://i.ibb.co/v39VLGQ/paint.png"/>
+         
         <div class="content">
              {{ content|safe }}
         </div>
