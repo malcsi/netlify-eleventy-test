@@ -1,5 +1,5 @@
 ---
-layout: layouts/about-layout.njk
+layout: layouts/post.njk
 title: About 
 description: Brief description 
 date: 2021-05-31

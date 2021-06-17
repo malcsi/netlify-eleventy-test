@@ -77,24 +77,42 @@
 
          main {
             padding-bottom: 15px;
+            display: flex;
          }
          .footer {
-   background: linear-gradient(#fff,#17379c, #17379c);
-   height: 4rem;
-   color: white; 
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   left: 0;
-}
-
-svg {
-   margin-right: 2em;
-}
-
-         .content {
-            margin: 5% 15%;
+            background: linear-gradient(#fff,#17379c, #17379c);
+            height: 4rem;
+            color: white; 
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            left: 0;
          }
+
+         svg {
+            margin-right: 2em;
+         }
+       
+         .content {
+            margin: 5% 5%;
+         }
+         .paint {
+           width: 30vw;
+           margin-top: 5vh;
+           filter: drop-shadow(0px 10px 7px black);
+	        animation: drop 1.5s ease;
+         }
+         @keyframes drop {
+            0% {
+               opacity: 0;
+               transform: translateY(-80px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0px);
+            }
+         }
+         
          @media (max-width: 768px) {
          .logo img {
             max-width: 15vh;
@@ -116,6 +134,12 @@ svg {
             padding: 16px;
             font-size: 1em;
          }
+         .paint {
+            margin: auto;
+         }
+         main {
+           flex-direction: column;
+         }
          }
       </style>
     </head>
@@ -134,6 +158,9 @@ svg {
 			</nav>
       </header>
       <main>
+         
+            <img class="paint" src="https://i.ibb.co/KjrJ3g7/Picture2.png"/>
+         
         <div class="content">
              {{ content|safe }}
         </div>
