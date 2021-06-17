@@ -14,7 +14,7 @@
  }
   
   .logo img {
-   max-width: 33vh;
+   max-width: 14vw;
    height:auto;
    margin-left: 5%;
   }
@@ -60,15 +60,16 @@
    }
    .presentation {
       font-size: 4.7vw;
-      margin-left: -20%;
+      margin-left: -16%;
       margin-top: 7vh;
    }
    .design {
       width: 40vw;
       position: relative;
-      left: 4vw;
+      left: 4.8vw;
    }
    .projects-button {
+      margin-left: 20px;
       margin-top: 3em;
       border-top: 1px solid #0a517d;
       background: #31bfa7;
@@ -151,6 +152,9 @@ svg {
    .logo img {
       max-width: 15vh;
    }
+   .design {
+      left: 1.2vw;
+   }
    .about {
       margin-bottom: 5.5vh;
    }
@@ -159,6 +163,10 @@ svg {
    }
    .nav-link {
       font-size: 0.8rem;
+   }
+   .nav-link:hover {
+      padding: 16px;
+      font-size: 1em;
    }
    .navbar-brand {
       margin: 1rem;
