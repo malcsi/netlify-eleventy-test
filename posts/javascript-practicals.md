@@ -15,7 +15,7 @@ const percentageCalculator = (number, percentage) => {<br/>
   return result;<br/>
 }<br/>
 <br/>
-document.write(percentageCalculator(387, 4.3));</code><br/>
+document.write(percentageCalculator(387, 4.3));</code>
 <br/>
 <em>OUTPUT: 16.641 </em>
 
@@ -39,7 +39,6 @@ const sizeAndDrinkOrder = (size, drink) => {<br/>
   return `You have ordered a ${size} of ${softDrinkLabel}`;<br/>
 }<br/>
 <br/>
-<br/>
 document.write(sizeAndDrinkOrder("Large", "cola"));<br/>
 document.write(sizeAndDrinkOrder("Medium", "orange"));<br/>
 document.write(sizeAndDrinkOrder("Small", "lemon"));</code><br/>
@@ -47,7 +46,7 @@ document.write(sizeAndDrinkOrder("Small", "lemon"));</code><br/>
 <em>OUTPUT:<br/>
 You have ordered a Large of Cola<br/>
 You have ordered a Medium of Orangeade<br/>
-You have ordered a Small of Lemonade<br/>
+You have ordered a Small of Lemonade
 </em>
 
 <br/><br/>-----------------------------------<br/><br/>
