@@ -9,10 +9,10 @@ date: 2021-05-31
  
   She enrolled at The Coders Guild’s JAMStack Bootcamp in late May. She is now comfortable dealing with:
   <ul>
-        <li>HTML5, CSS3, SASS</li>
-        <li>JavaScript and Jquery</li>
-        <li>APIs integration</li>
-        <li>Adobe Photoshop CC</li>
-        <li>SSG and CMS</li>
+  &nbsp;&nbsp;      <li>HTML5, CSS3, SASS</li>
+  &nbsp;&nbsp;      <li>JavaScript and Jquery</li>
+  &nbsp;&nbsp;      <li>APIs integration</li>
+  &nbsp;&nbsp;      <li>Adobe Photoshop CC</li>
+  &nbsp;&nbsp;      <li>SSG and CMS</li>
   </ul>
   Ana-Maria is heavily involved in studying and building websites, with a particular emphasis on fusing her visual arts background with online design.
