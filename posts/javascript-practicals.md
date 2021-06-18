@@ -1,7 +1,7 @@
 ---
 layout: layouts/post.njk
-title: JavaScript exercises
-description: Different functions used
+title: JavaScript functions
+description: Modern functions and switch statements
 date: 2021-06-18
 ---
 
@@ -9,12 +9,13 @@ In this exercise, I completed three tasks using JavaScript functions written thi
 <br/><br/>-----------------------------------<br/><br/>
 For the first exercise, I wrote a function that returns a percentage of a given integer.<br/>
 <br/>
+<code>
 const percentageCalculator = (number, percentage) => {<br/>
   let result = percentage / 100 * number;<br/>
   return result;<br/>
 }<br/>
 <br/>
-document.write(percentageCalculator(387, 4.3));<br/>
+document.write(percentageCalculator(387, 4.3));</code><br/>
 <br/>
 <em>OUTPUT: 16.641 </em>
 
@@ -22,6 +23,7 @@ document.write(percentageCalculator(387, 4.3));<br/>
 <br/><br/>-----------------------------------<br/><br/>
 The second exercise is a basic programme that allows us to order three different types of drinks, each with three different sizes.
 <br/><br/>
+<code>
 const sizeAndDrinkOrder = (size, drink) => {<br/>
   switch(drink) {<br/>
     case "cola":<br/>
@@ -40,7 +42,7 @@ const sizeAndDrinkOrder = (size, drink) => {<br/>
 <br/>
 document.write(sizeAndDrinkOrder("Large", "cola"));<br/>
 document.write(sizeAndDrinkOrder("Medium", "orange"));<br/>
-document.write(sizeAndDrinkOrder("Small", "lemon"));<br/>
+document.write(sizeAndDrinkOrder("Small", "lemon"));</code><br/>
 <br/>
 <em>OUTPUT:<br/>
 You have ordered a Large of Cola<br/>
@@ -51,6 +53,7 @@ You have ordered a Small of Lemonade<br/>
 <br/><br/>-----------------------------------<br/><br/>
 The third function produced a calculator able to operate in two numbers by adding, supplying, multiplying, dividing or modulus.
 <br/>
+<code>
 const calculator = (number1, number2, operator) => {<br/>
   switch (operator) {<br/>
       case"+":<br/>
@@ -76,7 +79,7 @@ document.write(calculator(1,2, "+"));<br/>
 document.write(calculator(30,2, "-"));<br/>
 document.write(calculator(26,13, "*"));<br/>
 document.write(calculator(30,5, "/"));<br/>
-document.write(calculator(10,2, "%"));<br/>
+document.write(calculator(10,2, "%"));</code><br/>
 <br/>
 <em>OUTPUT:<br/>
 1 + 2 = 3<br/>
