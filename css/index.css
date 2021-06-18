@@ -63,7 +63,7 @@
       font-size: 4.7vw;
       margin-left: -16%;
       margin-top: 7vh;
-    animation: roll-out-left 4s ease-in-out both;
+      animation: welcome 4s ease-in-out both;
    }
    .design {
       width: 40vw;
