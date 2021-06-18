@@ -16,11 +16,11 @@ const percentageCalculator = (number, percentage) => {<br/>
 }<br/>
 <br/>
 document.write(percentageCalculator(387, 4.3));</code>
-<br/>
+<br/><br/>
 <em>OUTPUT: 16.641 </em>
 
 
-<br/><br/>-----------------------------------<br/><br/>
+<br/>-----------------------------------<br/><br/>
 The second exercise is a basic programme that allows us to order three different types of drinks, each with three different sizes.
 <br/><br/>
 <code>
@@ -49,7 +49,7 @@ You have ordered a Medium of Orangeade<br/>
 You have ordered a Small of Lemonade
 </em>
 
-<br/><br/>-----------------------------------<br/><br/>
+<br/>-----------------------------------<br/><br/>
 The third function produced a calculator able to operate in two numbers by adding, supplying, multiplying, dividing or modulus.
 <br/>
 <code>
