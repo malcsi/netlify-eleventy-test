@@ -11,8 +11,8 @@ For the first exercise, I wrote a function that returns a percentage of a given 
 <br/>
 <code>
 const percentageCalculator = (number, percentage) => {<br/>
-  let result = percentage / 100 * number;<br/>
-  return result;<br/>
+ &nbsp; let result = percentage / 100 * number;<br/>
+  &nbsp;return result;<br/>
 }<br/>
 <br/>
 document.write(percentageCalculator(387, 4.3));</code>
@@ -35,7 +35,7 @@ const sizeAndDrinkOrder = (size, drink) => {<br/>
  &nbsp;&nbsp;   case "lemon":<br/>
   &nbsp;&nbsp;&nbsp;    var softDrinkLabel = "Lemonade"<br/>
    &nbsp;&nbsp;&nbsp;   break;<br/>
-  };<br/>
+ &nbsp; };<br/>
  &nbsp;&nbsp; return `You have ordered a ${size} of ${softDrinkLabel}`;<br/>
 };<br/>
 <br/>
@@ -70,7 +70,7 @@ const calculator = (number1, number2, operator) => {<br/>
   &nbsp;&nbsp;    case"%":<br/>
   &nbsp;&nbsp;&nbsp;       result = number1 % number2;<br/>
   &nbsp;&nbsp;&nbsp;       break;<br/>
-  };<br/>
+ &nbsp; };<br/>
   return `${number1} ${operator} ${number2} = ${result}`<br/>
 };<br/>
 <br/>
