@@ -25,19 +25,19 @@ The second exercise is a basic programme that allows us to order three different
 <br/><br/>
 <code>
 const sizeAndDrinkOrder = (size, drink) => {<br/>
-  switch(drink) {<br/>
-    case "cola":<br/>
-      var softDrinkLabel = "Cola"<br/>
-      break;<br/>
-    case "orange":<br/>
-      var softDrinkLabel = "Orangeade"<br/>
-      break;<br/>
-    case "lemon":<br/>
-      var softDrinkLabel = "Lemonade"<br/>
-      break;<br/>
-  }<br/>
-  return `You have ordered a ${size} of ${softDrinkLabel}`;<br/>
-}<br/>
+ &nbsp; switch(drink) {<br/>
+  &nbsp;&nbsp;  case "cola":<br/>
+ &nbsp;&nbsp;&nbsp;     var softDrinkLabel = "Cola"<br/>
+ &nbsp;&nbsp;&nbsp;     break;<br/>
+ &nbsp;&nbsp;   case "orange":<br/>
+  &nbsp;&nbsp;&nbsp;    var softDrinkLabel = "Orangeade"<br/>
+  &nbsp;&nbsp;&nbsp;    break;<br/>
+ &nbsp;&nbsp;   case "lemon":<br/>
+  &nbsp;&nbsp;&nbsp;    var softDrinkLabel = "Lemonade"<br/>
+   &nbsp;&nbsp;&nbsp;   break;<br/>
+  };<br/>
+ &nbsp;&nbsp; return `You have ordered a ${size} of ${softDrinkLabel}`;<br/>
+};<br/>
 <br/>
 document.write(sizeAndDrinkOrder("Large", "cola"));<br/>
 document.write(sizeAndDrinkOrder("Medium", "orange"));<br/>
@@ -54,22 +54,22 @@ The third function produced a calculator able to operate in two numbers by addin
 <br/>
 <code>
 const calculator = (number1, number2, operator) => {<br/>
-  switch (operator) {<br/>
-      case"+":<br/>
-         result = number1 + number2;<br/>
-         break;<br/>
-      case"-":<br/>
-         result = number1 - number2;<br/>
-         break;<br/>
-      case"*":<br/>
-         result = number1 * number2;<br/>
-         break;<br/>
-      case"/":<br/>
-         result = number1 / number2;<br/>
-         break;<br/>
-      case"%":<br/>
-         result = number1 % number2;<br/>
-         break;<br/>
+ &nbsp; switch (operator) {<br/>
+  &nbsp;&nbsp;    case"+":<br/>
+      &nbsp;&nbsp;&nbsp;   result = number1 + number2;<br/>
+      &nbsp;&nbsp;&nbsp;   break;<br/>
+  &nbsp;&nbsp;    case"-":<br/>
+      &nbsp;&nbsp;&nbsp;   result = number1 - number2;<br/>
+    &nbsp;&nbsp;&nbsp;     break;<br/>
+ &nbsp;&nbsp;     case"*":<br/>
+   &nbsp;&nbsp;&nbsp;      result = number1 * number2;<br/>
+   &nbsp;&nbsp;&nbsp;      break;<br/>
+  &nbsp;&nbsp;    case"/":<br/>
+   &nbsp;&nbsp;&nbsp;      result = number1 / number2;<br/>
+   &nbsp;&nbsp;&nbsp;      break;<br/>
+  &nbsp;&nbsp;    case"%":<br/>
+  &nbsp;&nbsp;&nbsp;       result = number1 % number2;<br/>
+  &nbsp;&nbsp;&nbsp;       break;<br/>
   };<br/>
   return `${number1} ${operator} ${number2} = ${result}`<br/>
 };<br/>

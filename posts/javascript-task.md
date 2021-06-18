@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: JavaScript practise
+title: JavaScript functions
 description: Different functions used
 date: 2021-06-16
 ---
