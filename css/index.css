@@ -154,7 +154,7 @@
 
    @media (max-width: 768px) {
       .logo img {
-         max-width: 9vw;
+         max-width: 12vw;
       }
       .design {
          left: 1.2vw;
